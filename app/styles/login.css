@@ -1,0 +1,7 @@
+.app--login {
+  background-image: url('../images/login-lighter.gif');
+  background-repeat: no-repeat;
+  display: block;
+  background-size: 100% 100%;
+  opacity: .8;
+}

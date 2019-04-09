@@ -1,0 +1,17 @@
+webapp:
+  build: .
+  working_dir: /src/app
+  ports:
+    - '3000:3000' # api/koajs server
+    - '3001:3001' # webpack-dev-serer
+    - '3002:3002' # browsersync app
+    - '3003:3003' # browsersync admin
+  environment:
+    VIRTUAL_HOST: 192.168.99.100
+    VIRTUAL_PORT: 3002
+  command: npm run dev
+  expose:
+    - 3000
+    - 3001
+    - 3002
+    - 3003
